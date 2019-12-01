@@ -1,7 +1,6 @@
 {
-  "name": "common",
+  "name": "@amadek/js-sdk",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "test": "mocha tests/*"
   },
@@ -10,5 +9,18 @@
   "devDependencies": {
     "mocha": "^6.2.2",
     "semistandard": "^14.2.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amadek/js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amadek/js-sdk/issues"
+  },
+  "homepage": "https://github.com/Amadek/js-sdk#readme",
+  "description": ""
 }
