@@ -3,7 +3,7 @@ var assert = require('assert');
 var Interface = require('../Interface');
 
 describe('TestInterface', function () {
-  it('literalWorks', function () {
+  it('should work with literal objects', function () {
     // ARRANGE
     var IFoo = new Interface('IFoo', ['fooMethod', 'barMethod'], ['fooProperty', 'barProperty']);
     var foo = {
@@ -23,19 +23,19 @@ describe('TestInterface', function () {
     assert.doesNotThrow(function () { IFoo.ensureImplemented(foo); });
   });
 
-  it('prototypeWorks', function () {
+  it('should work with prototypes', function () {
     // ARRANGE
     var IFoo = new Interface('IFoo', ['fooMethod']);
-    var Foo = function () {
+    var Foo = (function () {
       function Foo () { }
 
       Foo.prototype.fooMethod = function () { };
 
       return Foo;
-    };
+    }());
 
     var foo = new Foo();
     // ACT, ASSERT
-    assert.throws(function () { IFoo.ensureImplemented(foo); });
+    assert.doesNotThrow(function () { IFoo.ensureImplemented(foo); });
   });
 });
