@@ -3,7 +3,7 @@ var Ensure = (function () {
   function Ensure () {}
 
   Ensure.prototype.notNull = function (obj) {
-    if (!obj) {
+    if (obj === null || obj === undefined) {
       throw new Error('Variable cannot be null or undefined.');
     }
   };
