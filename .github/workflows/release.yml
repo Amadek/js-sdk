@@ -26,5 +26,5 @@ jobs:
         npm test
       env:
         CI: true
-    - name: npm publish
-      run: npm publish
+    - name: Publish to npm
+      uses: pascalgn/npm-publish-action@1.1.0
