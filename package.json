@@ -1,19 +1,14 @@
 {
   "name": "@amadek/js-sdk",
-  "version": "1.0.1",
-  "scripts": {
-    "test": "mocha tests/*"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "mocha": "^6.2.2",
-    "semistandard": "^14.2.0"
-  },
-  "directories": {
-    "test": "tests"
-  },
-  "dependencies": {},
+  "keywords": [
+    "interface",
+    "ensure",
+    "amadek"
+  ],
+  "author": "Amadek",
+  "license": "MIT",
+  "version": "1.0.2",
+  "homepage": "https://github.com/Amadek/js-sdk#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Amadek/js-sdk.git"
@@ -21,6 +16,16 @@
   "bugs": {
     "url": "https://github.com/Amadek/js-sdk/issues"
   },
-  "homepage": "https://github.com/Amadek/js-sdk#readme",
-  "description": ""
+  "main": "Interface.js",
+  "scripts": {
+    "test": "mocha tests/*"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "semistandard": "^14.2.0"
+  },
+  "dependencies": {}
 }
