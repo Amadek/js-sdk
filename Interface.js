@@ -5,7 +5,6 @@ function Interface (interfaceName, methodNames, propertyNames) {
   }
 
   this.interfaceName = interfaceName;
-
   methodNames = methodNames || [];
   propertyNames = propertyNames || [];
 
